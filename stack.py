@@ -21,34 +21,52 @@ Maka dimana posisi Top of Stack?
 # PUSH 3 elemen kedalam stack
 print("-----PUSH 3 elemen kedalam stack-----")
 # Elemen ke-1 
-stack.append("a")
+stack.append(1)
 
-print("\nElemen masuk -> 'a'")
+print("\nElemen masuk -> '1'")
 print("data sekarang", stack)
 
 # Elemen ke-2 
-stack.append("b")
+stack.append(2)
 
-print("\nElemen masuk -> 'b'")
+print("\nElemen masuk -> '2'")
 print("data sekarang", stack)
 
 # Elemen ke-3 
-stack.append("c")
-print("\nElemen masuk -> 'c'")
+stack.append(3)
+print("\nElemen masuk -> '3'")
 print("data sekarang", stack)
 
 
-# PUSH 2 elemen kedalam stack
-print("\n-----PUSH 2 elemen kedalam stack-----")
+# PUSH 2 elemen pada stack
+print("\n-----PUSH 2 elemen pada stack-----")
 # Elemen ke-4
-stack.append("d")
+stack.append(4)
 
-print("\nElemen masuk -> 'd'")
+print("\nElemen masuk -> '4'")
 print("data sekarang", stack)
 
 # Elemen ke-5 
-stack.append("e")
-print("\nElemen masuk -> 'e'")
+stack.append(5)
+print("\nElemen masuk -> '5'")
+print("data sekarang", stack)
+
+# POP 3 elemen
+print("\n-----POP 3 elemen kedalam stack-----")
+
+keluar1=stack.pop()
+
+print("\nElemen keluar ->", keluar1 )
+print("data sekarang", stack)
+
+keluar2=stack.pop()
+
+print("\nElemen keluar ->", keluar2 )
+print("data sekarang", stack)
+
+keluar3=stack.pop()
+
+print("\nElemen keluar ->", keluar3 )
 print("data sekarang", stack)
 
 # Posisi Top of Stack
@@ -57,6 +75,8 @@ top_of_stack = stack[-1]
 print("Posisi Top of Stack =", top_of_stack)
 print("Jumlah Stack =", len(stack))
 print("Max Stack = ", max_stack)
+
+
 
 
 """
@@ -84,9 +104,24 @@ print("Jumlah Stack saat ini =", len(stack))
 print("Max Stack = ", max_stack)
 
 # melakukan PUSH elemen agar kondisi Top of Stack = max_stack
-stack.append('f')
+stack.append(3)
 
-print("\nElemen masuk -> 'f'")
+print("\nElemen masuk -> '3'")
+print("data sekarang", stack)
+
+stack.append(4)
+
+print("\nElemen masuk -> '4'")
+print("data sekarang", stack)
+
+stack.append(5)
+
+print("\nElemen masuk -> '5'")
+print("data sekarang", stack)
+
+stack.append(6)
+
+print("\nElemen masuk -> '6'")
 print("data sekarang", stack)
 
 print("\nJumlah Stack saat ini =", len(stack))
@@ -103,35 +138,36 @@ IsEmpty = True
 # melakukan POP pada elemen di dalam stack[]
 print("\n----POP----")
 
-keluar1=stack.pop()
+pop1=stack.pop()
 
-print("\nElemen keluar ->", keluar1 )
+print("\nElemen keluar ->", pop1 )
 print("data sekarang", stack)
 
-keluar2=stack.pop()
+pop2=stack.pop()
 
-print("\nElemen keluar ->", keluar2 )
+print("\nElemen keluar ->", pop2 )
 print("data sekarang", stack)
 
-keluar3=stack.pop()
+pop3=stack.pop()
 
-print("\nElemen keluar ->", keluar3 )
+print("\nElemen keluar ->", pop3 )
 print("data sekarang", stack)
 
-keluar4=stack.pop()
+pop4=stack.pop()
 
-print("\nElemen keluar ->", keluar4 )
+print("\nElemen keluar ->", pop4 )
 print("data sekarang", stack)
 
-keluar5=stack.pop()
+pop5=stack.pop()
 
-print("\nElemen keluar ->", keluar5 )
+print("\nElemen keluar ->", pop5 )
 print("data sekarang", stack)
 
-keluar6=stack.pop()
+pop6=stack.pop()
 
-print("\nElemen keluar ->", keluar6 )
+print("\nElemen keluar ->", pop6 )
 print("data sekarang", stack)
+
 
 # mengecek IsEmpty stack[]
 print("\nIsEmpty pada kondisi terakhir:")
